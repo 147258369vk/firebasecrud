@@ -1,0 +1,52 @@
+<mat-card>
+  <mat-toolbar>Creating New User</mat-toolbar>
+<br><br>
+  <form #newUser="ngForm" (ngSubmit)="addUser(newUser)">
+
+
+  <mat-form-field>
+
+    <input
+    type="text"
+    matInput
+    placeholder="Your name"
+    name="username"
+    ngModel>
+  </mat-form-field>
+
+  <br><br>
+  <mat-form-field>
+  <input
+  type="text"
+  matInput
+  placeholder="Your Email"
+  name="email"
+  ngModel>
+</mat-form-field>
+<br><br>
+
+<mat-form-field>
+  <input
+  type="text"
+  matInput
+  placeholder="Your Designation"
+  name="designation"
+  ngModel>
+</mat-form-field>
+<br><br>
+
+<mat-form-field>
+  <input
+  type="text"
+  matInput
+  placeholder="Your location"
+  name="location"
+  ngModel>
+</mat-form-field>
+
+<br><br>
+
+<button mat-raised-button  color="accent" type="submit">Add User</button>
+</form>
+</mat-card>
+

@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-toolbar>List of Users</mat-toolbar>
+  <br><br>
+  <table class="table">
+    <tr>
+      <th>Sr.no</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Designation</th>
+      <th>Location</th>
+    </tr>
+
+    <tr *ngFor="let user of items,let i=index">
+      <td>{{i+1}}</td>
+      <td>{{user.payload.doc.data().name}}</td>
+      <td>{{user.payload.doc.data().email}}</td>
+      <td>{{user.payload.doc.data().designation}}</td>
+      <td>{{user.payload.doc.data().location}}</td>
+
+
+    </tr>
+  </table>
+</mat-card>
